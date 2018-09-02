@@ -1,0 +1,9 @@
+The solution is based on Natural Language Processing.
+First, tagging is done using python module NLTK and use semi-supervised algorithm.
+
+Algo:
+
+-> Start with seed set R of tuples.
+-> Generate set of patterns from known relations and find support and confidence.
+-> Generate new set of tuples matching pattern and find support and confidence. Remove tuples which has confidance < threashold.
+-> Repeat above steps until all the matching patterns are found.
